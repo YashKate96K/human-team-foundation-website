@@ -1,0 +1,75 @@
+/* Windsurf CSS Framework — Tailwind-inspired, local, minimal sample */
+:root {
+  --primary: #2563eb;
+  --secondary: #fbbf24;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --gray: #f3f4f6;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --radius: 0.75rem;
+  --font: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--gray);
+  margin: 0;
+  color: #222;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover { background: #1d4ed8; }
+
+.status-success { color: var(--success); }
+.status-danger { color: var(--danger); }
+.status-warning { color: var(--secondary); }
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.input-group input {
+  width: 100%;
+  padding: 1rem 0.75rem 0.25rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background: none;
+  outline: none;
+}
+.input-group label {
+  position: absolute;
+  left: 0.75rem;
+  top: 1rem;
+  color: #6b7280;
+  background: #fff;
+  padding: 0 0.25rem;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -0.75rem;
+  left: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+/* Add more classes as needed for layout, grid, overlays, etc. */
