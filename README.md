@@ -1,3 +1,8 @@
+# Human Team Foundation Website
+
+🌐 **Live Website:** [Click here to visit](https://ssi-bank-management.windsurf.build)
+
+This is the official website for the Human Team Foundation NGO. It provides a platform for volunteer registration, admin management, and more.
 # NGO Dashboard: Trust, Transparency, Teamwork
 
 A modern, offline-capable, role-based dashboard for NGOs, built with React.js (frontend), Flask (backend), and a local custom Windsurf CSS framework. Features Admin, Volunteer, and Beneficiary dashboards, accessibility-first design, and full offline support.
